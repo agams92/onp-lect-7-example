@@ -1,0 +1,10 @@
+extends ../layout.pug
+
+block customHead
+  script(src='/api/index.js')
+
+block content
+  .api-page
+    each api in apiVersions
+      h2= api
+  +form()

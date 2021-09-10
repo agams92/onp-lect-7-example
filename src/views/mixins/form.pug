@@ -1,0 +1,7 @@
+mixin form
+  form(method='POST' enctype='multipart/form-data')
+    .form-group
+      label(for='inputFile')
+      input(name='someFile' type='file' id='inputFile')
+    .form-group.text-right 
+      button.btn.btn-primary(type='submit') Загрузить
